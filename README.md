@@ -25,3 +25,9 @@ This code base uses PostgreSQL as its relational database. To incorporate MySQL 
       hash VARCHAR(100) NOT NULL,
       email text UNIQUE NOT NULL
    );`
+
+
+
+### What i learnt from this project:-
+1) Incorporating Clarifai api.
+2) Making use of relational databases like PostgreSQL using Knex.js.
