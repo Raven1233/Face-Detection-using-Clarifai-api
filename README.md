@@ -1,6 +1,8 @@
 # Face-Detection-using-Clarifai-api
 This is a face detection app created using React JS and Node JS. It uses the Clarifai api to perform face detection.
 
+### You can view the live version of the app [here](https://real-time-face-detection.netlify.app/).
+
 Instructions for setting up the backend and the frontend can be found within the readme files of those respective directories. 
 This code base uses PostgreSQL as its relational database. To incorporate MySQL or SQLITE, refer to the Knex.js documentation [here](http://knexjs.org/).
 
@@ -32,4 +34,4 @@ This code base uses PostgreSQL as its relational database. To incorporate MySQL 
 1) Incorporating Clarifai api.
 2) Making use of relational databases like PostgreSQL using Knex.js.
 
-### You can view the live version of the app [here](https://real-time-face-detection.netlify.app/).
+
