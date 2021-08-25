@@ -31,3 +31,5 @@ This code base uses PostgreSQL as its relational database. To incorporate MySQL 
 ### What i learnt from this project:-
 1) Incorporating Clarifai api.
 2) Making use of relational databases like PostgreSQL using Knex.js.
+
+### You can view the live version of the app [here](https://real-time-face-detection.netlify.app/).
