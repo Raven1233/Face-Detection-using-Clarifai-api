@@ -33,5 +33,6 @@ This code base uses PostgreSQL as its relational database. To incorporate MySQL 
 ### What i learnt from this project:-
 1) Incorporating Clarifai api.
 2) Making use of relational databases like PostgreSQL using Knex.js.
+3) Finally i got to learn how to use hosting sites like Heroku and Netlify(I used Heroku for the backend and Netlify for the frontend).
 
 
