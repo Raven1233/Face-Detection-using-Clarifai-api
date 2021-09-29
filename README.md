@@ -9,6 +9,8 @@ This is a face detection app created using React JS and Node JS. It uses the Cla
 <img src="./ss/ss_3.png" alt="pic3" />
 <img src="./ss/ss_4.png" alt="pic4" />
 
+### Important:-
+
 Instructions for setting up the backend and the frontend can be found within the readme files of those respective directories. 
 This code base uses PostgreSQL as its relational database. To incorporate MySQL or SQLITE, refer to the Knex.js documentation [here](http://knexjs.org/).
 
