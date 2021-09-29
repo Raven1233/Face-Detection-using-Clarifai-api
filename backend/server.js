@@ -11,12 +11,12 @@ const image = require('./controllers/image');
 
 const db = knex({
   // connect to your own database here
-  client: 'your database client like mysql,sqlite or pgsql',
+  client: 'pg',
   connection: {
-    host : 'localhost',
-    user : 'your username',
-    password : 'your password',
-    database : 'your database name'
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false
+    }
   }
 });
 
@@ -25,13 +25,13 @@ const app = express();
 app.use(cors())
 app.use(bodyParser.json());
 
-app.get('/', (req, res)=> { res.send(db.users) })
+app.get('/', (req, res)=> { res.send("It is working") })
 app.post('/signin', signin.handleSignin(db, bcrypt))
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) })
 app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db)})
 app.put('/image', (req, res) => { image.handleImage(req, res, db)})
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)})
 
-app.listen(3000, ()=> {
-  console.log('app is running on port 3000');
+app.listen(process.env.PORT || 3000, ()=> {
+  console.log(`app is running on port ${process.env.PORT}`);
 })
